@@ -1,0 +1,36 @@
+body {
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+}
+
+#top {
+  width: 100%;
+}
+
+#presentation,
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  margin: 3px 0;
+}
+
+span {
+  display: block;
+}
+
+section {
+  margin: 20px 0;
+  width: 100%;
+}
+
+img {
+  width: 90%;
+  max-width: 300px;
+}
