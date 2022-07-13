@@ -9,6 +9,12 @@ To start this application do the following:
 Breakdown of the assignment:
 This was a really fun and challenging assignment. I felt comfortable with the requirements of the application and feel like I could have delivered on all of them with a bit more time. I definitely struggled to find the fastest and most efficient way to do things, but feel that the final product reflects a good basic idea of what was expected.
 
+What I think I did well:
+1. I was able to get the API working and returing the required info.
+2. All of the required requests were handled properly by my backend.
+3. Made good use of Node and Express to handle backend requests
+4. Was able to produce a minimum viable product within the time frame.
+
 What I would change/improve:
 1. Obviously, the biggest issue was that I didn't use Vue for the front end. While I have used Vue in the past, I didn't feel that I would be able to produce a viable product using Vue in the alloted time. I tried to implement it at the end, but didn't have enough time to get it to work, so I scrapped that idea.
 2. The styling is greatly lacking. I spent the majority of my time on the backend and didn't leave myself enough time to get the frontend styled adequately.
