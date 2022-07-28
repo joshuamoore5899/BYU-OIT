@@ -4,7 +4,7 @@ Welcome to the Movie Finder!!!
 To start this application do the following: 
 1. Clone this repository
 2. While in repository, type "npm install" in the terminal
-3. type in terminal: "node webservice.server.js" to start localhost version of the application
+3. type in terminal: "node webservice/server.js" to start localhost version of the application
 
 Breakdown of the assignment:
 This was a really fun and challenging assignment. I felt comfortable with the requirements of the application and feel like I could have delivered on all of them with a bit more time. I definitely struggled to find the fastest and most efficient way to do things, but feel that the final product reflects a good basic idea of what was expected.
