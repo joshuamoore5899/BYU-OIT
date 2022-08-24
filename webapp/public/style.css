@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +6,15 @@
   box-sizing: border-box;
 }
 
+=======
+>>>>>>> 458f1276a52deb00c7f40006bde76a33ddf7b52a
 body {
   background: lightblue;
   display: flex;
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 header {
   width: 100%;
   background: navy;
@@ -23,6 +27,8 @@ header h1 {
   padding: 10px 0;
 }
 
+=======
+>>>>>>> 458f1276a52deb00c7f40006bde76a33ddf7b52a
 #top {
   width: 100%;
 }
@@ -36,11 +42,14 @@ header h1 {
   text-align: center;
 }
 
+<<<<<<< HEAD
 #input-header {
   font-size: 1.5rem;
   margin: 5px;
 }
 
+=======
+>>>>>>> 458f1276a52deb00c7f40006bde76a33ddf7b52a
 button {
   margin: 3px 0;
 }
