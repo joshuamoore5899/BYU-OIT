@@ -10,17 +10,16 @@ async function apiRequest(){
         const response = await fetch(`/api/:${name}`)
         const data = await response.json()
         for (let i = 0; i < data.length; i++) {
-          presentation.appendChild(createSection(data[i].title, data[i].movie_id, data[i].poster_image_url, data[i].popularity_summary));
+          presentation.appendChild(createSection(data[i].title, data[i].poster_image_url, data[i].popularity_summary));
         }
     }catch(error){
         console.log(error)
     }
 }
 
-function createSection(name, id, url, text) {
+function createSection(name, url, text) {
   let section = document.createElement('section');
   section.appendChild(createHeader(name));
-  section.appendChild(createID(id));
   section.appendChild(createImg(url));
   section.appendChild(createSpan(text));
   return section;
