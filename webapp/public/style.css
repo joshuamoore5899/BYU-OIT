@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +6,12 @@
   box-sizing: border-box;
 }
 
-=======
->>>>>>> 458f1276a52deb00c7f40006bde76a33ddf7b52a
 body {
   background: lightblue;
   display: flex;
   flex-direction: column;
 }
 
-<<<<<<< HEAD
 header {
   width: 100%;
   background: navy;
@@ -27,8 +24,6 @@ header h1 {
   padding: 10px 0;
 }
 
-=======
->>>>>>> 458f1276a52deb00c7f40006bde76a33ddf7b52a
 #top {
   width: 100%;
 }
