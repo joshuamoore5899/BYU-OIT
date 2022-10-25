@@ -43,7 +43,8 @@ app.get('/api/:name', async (req, res) => {
         "movie_id": movieArray[i].id,
         "title": movieArray[i].original_title,
         "poster_image_url": `https://image.tmdb.org/t/p/w500/${movieArray[i].poster_path}`,
-        "popularity_summary": `${movieArray[i].popularity} out of ${movieArray[i].vote_count}`
+        "date": movieArray[i].release_date,
+        "popularity_summary": `${movieArray[i].vote_average}/10`
       }
       movies.push(temp)
     }

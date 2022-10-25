@@ -9,25 +9,28 @@ async function apiRequest(){
     try{
         const response = await fetch(`/api/:${name}`)
         const data = await response.json()
+
         for (let i = 0; i < data.length; i++) {
-          presentation.appendChild(createSection(data[i].title, data[i].poster_image_url, data[i].popularity_summary));
+          presentation.appendChild(createSection(data[i].title, data[i].poster_image_url, data[i].date, data[i].popularity_summary));
         }
     }catch(error){
         console.log(error)
     }
 }
 
-function createSection(name, url, text) {
+function createSection(name, url, date, popularity) {
   let section = document.createElement('section');
   section.appendChild(createHeader(name));
   section.appendChild(createImg(url));
-  section.appendChild(createSpan(text));
+  section.appendChild(createH4(date));
+  section.appendChild(createSpan(popularity));
+  section.classList.add('movie');
   return section;
 }
 
 function createHeader(name) {
   let header = document.createElement('h2');
-  header.textContent = 'Title: ' + name;
+  header.textContent = name;
   return header;
 }
 
@@ -43,8 +46,14 @@ function createImg(url) {
   return img;
 }
 
-function createSpan(text) {
+function createH4(date) {
+  let h4 = document.createElement('h4');
+  h4.textContent = 'Released: ' + date;
+  return h4;
+}
+
+function createSpan(popularity) {
   let span = document.createElement('span');
-  span.textContent = 'Popularity: ' + text;
+  span.textContent = 'Rating: ' + popularity;
   return span;
 }
