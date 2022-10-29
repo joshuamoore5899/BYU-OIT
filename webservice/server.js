@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-const pathRoute = __dirname.slice(0, __dirname.indexOf('webservice'));
+const pathRoute = __dirname.slice(0, __dirname.indexOf('webservice')); // establish path name **needs fixing
 
 app.get('/', (req, res) => {
 
@@ -33,7 +33,7 @@ app.get('/api/:name', async (req, res) => {
     const name = req.params.name;
     const apiResponse = await fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=eb62a108d777dc486d9e8dc0fc79c4eb&language=en-US&query=${name}&page=1&include_adult=false`
-    )
+    ) //api fetch call
     const apiResponseJson = await apiResponse.json()
     const movieArray = apiResponseJson.results.slice(0, 10);
 
