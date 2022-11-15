@@ -35,11 +35,11 @@ app.get('/api/:name', async (req, res) => {
       `https://api.themoviedb.org/3/search/movie?api_key=eb62a108d777dc486d9e8dc0fc79c4eb&language=en-US&query=${name}&page=1&include_adult=false`
     ) //api fetch call
     const apiResponseJson = await apiResponse.json()
-    const movieArray = apiResponseJson.results.slice(0, 10);
+    const movieArray = apiResponseJson.results.slice(0, 10); //limit to 10 movies
 
     const movies = [];
     for (let i = 0; i < movieArray.length; i++) {
-      let temp = {
+      let temp = { //format data
         "movie_id": movieArray[i].id,
         "title": movieArray[i].original_title,
         "poster_image_url": `https://image.tmdb.org/t/p/w500/${movieArray[i].poster_path}`,
@@ -55,6 +55,6 @@ app.get('/api/:name', async (req, res) => {
   }
 })
 
-app.listen(process.env.PORT || PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{ //set up server
   console.log(`Listening on port ${PORT}`)
 })
